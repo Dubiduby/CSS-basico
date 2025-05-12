@@ -1,0 +1,365 @@
+body {
+    background-color: #191919;
+    font-family: "Playfair Display", serif;
+} 
+
+/*Navbar*/
+
+.topbar {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: fit-content;
+}
+
+.logo img {
+    width: 100px;
+}
+
+
+.topnav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    gap: 30px
+}
+
+.topnav a {
+    color: white;
+    font-size: 1rem;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
+.topnav a:last-child {
+    border: 2px solid #EE1E24;
+    border-radius: 16px;
+    padding: 8px 14px;
+}
+
+.topnav a:last-child:hover {
+    background-color: #EE1E24;
+    text-decoration: none;
+    transform: scale(1.02);
+}
+
+/*hero section*/
+
+.hero {
+    background-image: url(../images/fondo-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-text {
+    max-width: 50%;
+    color: white;
+    align-self: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    line-height: normal;
+}
+
+
+/* Features section -------------------------- */
+
+.features {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 150px 0px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.features-gallery {
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-self: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.card a {
+    border-radius: 14px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.card a:hover {
+    border: 3px solid #EE1E24;
+}
+
+/* News section -------------------------------- */
+
+.news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 30px;
+}
+
+.news-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.card-news {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    gap: 20px;
+}
+
+.image {
+    height: 100%;
+    width: 70%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-news .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    width: 100%;
+}
+
+.card-news h3 {
+    font-size: 30px;
+}
+
+.card-news p {
+    font-size: 16px;
+}
+
+/* contacto section -------------------------- */
+
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.contacto-wrapper {
+    width: 80%;
+    display: flex;
+    gap: 16px;
+}
+
+.grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr auto;
+    /* fila uno y fila dos ocupan 1 fila entera y la fila 3 que es el footer ocupa el tamaño de su contenido */
+    gap: 16px;
+    color: yellow;
+}
+
+.main-image {
+    width: 50%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.uno {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid yellow;
+    border-radius: 16px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.grid ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.grid ul li {
+    width: 100%;
+}
+
+.li-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dos {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.grid-mini {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.grid-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tres {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.tres img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cuatro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid yellow;
+    border-radius: 16px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.grid h5 {
+    font-size: 2.5rem;
+}
+
+.cinco {
+    grid-column: 2 span;
+    border: 1px solid yellow;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+}

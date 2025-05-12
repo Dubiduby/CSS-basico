@@ -1,0 +1,82 @@
+nav {
+    position: fixed;
+    right: 0;
+    margin: 40px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: #F8EDDA;
+    font-size: 38px;
+    font-weight: bolder;
+    z-index: 10;
+}
+
+
+body {
+    background-color: #AFC7BE;
+}
+
+.hero {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F32%2F9e%2F2f%2F329e2f6a54fdb1f53f4126991fcc6143.png&f=1&nofb=1&ipt=5866da9fd431d46f9f1d1a1c47f327403b0741b78dbeb46f6feaf931c9963861);
+    height:100vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 250px;
+    text-align: center;
+    color: #5C3D37;
+}
+
+#title-ball {
+    position: relative;
+
+}
+
+#ball {
+    position: absolute;
+    top: -30%;
+    left: 15%;
+    max-width: 38%;
+    height: auto;
+}
+
+.gallery {
+    background-color: #C8AEA2;
+    padding: 180px 0;
+    /* esta línea y la siguiente es para que se pongan las card una al lado de la otra */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.card {
+    background-color: #f5efe3;
+    border-radius: 20px;
+    width: 700px;
+    overflow: hidden;
+}
+
+.card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    position: top;
+}
+
+.text-wrapper {
+    padding: 40px;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+}

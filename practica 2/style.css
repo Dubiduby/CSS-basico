@@ -1,0 +1,48 @@
+body {
+    font-style: sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.planeta {
+    padding: 20px;
+}
+
+.especial {
+    border-left: 5px dotted white;
+}
+
+#tierra {
+    border: 5px solid gold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.planeta h2 {
+    text-decoration: underline;
+}
+
+h2 ~ p {
+    color: burlywood;
+}
+
+span {
+    border-radius: 16px;
+    padding: 4px 8px;
+}
+
+[data-tipo="gaseoso"] {
+    background-color: blueviolet;
+}
+
+[data-tipo="rocoso"] {
+    background-color: brown
+}
+
+[data-tipo="helado"] {
+    background-color: aqua;
+    color: black;
+}
