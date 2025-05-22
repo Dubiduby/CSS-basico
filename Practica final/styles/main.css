@@ -1,0 +1,51 @@
+
+
+/* ------------ HEADER ----------------*/
+.navbar {
+    background-color: #FAC001;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    height: 80px;
+}
+
+.navbar .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex: 1;
+    
+}
+nav a {
+    position: relative;
+    transition: transform 0.3s ease;
+    padding-bottom: 5px; /* espacio para la línea */
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* línea pegada al texto al inicio */
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0); /* inicia oculta */
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1); /* despliega la línea */
+}
